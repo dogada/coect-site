@@ -1,0 +1,35 @@
+{
+  "name": "coect-site",
+  "version": "0.1.0",
+  "description": "Simple singleton for communication between Coect applications.",
+  "main": "dist/site.js",
+  "scripts": {
+    "clean": "rm -rf ./dist/ && mkdir ./dist/",
+    "build-debug": "browserify index.js -d -s Site > dist/site.js",
+    "build-debug-map": "browserify index.js -d -s Site | exorcist dist/site.js.map > dist/site.js",
+    "watch": "watchify index.js -d -s Site -o dist/site.js -v",
+    "build-min": "browserify index.js -s Site | uglifyjs -c > dist/site.min.js",
+    "build": "npm run clean && npm run build-debug && npm run build-min"
+  },
+  "keywords": [
+    "coect",
+    "site",
+    "router",
+    "dispatcher",
+    "events"
+  ],
+  "author": "Dmytro V. Dogadailo <dvd@dogada.org>",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "riot-observable": "0.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogada/coect-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dogada/coect-site/issues"
+  },
+  "homepage": "https://github.com/dogada/coect-site#readme"
+}
