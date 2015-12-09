@@ -1,6 +1,6 @@
 {
   "name": "coect-site",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple singleton for communication between Coect applications.",
   "main": "dist/site.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "author": "Dmytro V. Dogadailo <dvd@dogada.org>",
   "license": "GPL-2.0",
   "dependencies": {
-    "riot-observable": "0.0.1"
+    "riot-observable": "2.3.11"
   },
   "devDependencies": {},
   "repository": {
