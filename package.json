@@ -1,6 +1,6 @@
 {
   "name": "coect-site",
-  "version": "0.1.4",
+  "version": "0.2.1",
   "description": "Simple singleton for communication between Coect applications.",
   "main": "dist/site.js",
   "scripts": {
