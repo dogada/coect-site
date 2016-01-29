@@ -11,12 +11,12 @@ Site.prototype.mount = function(data, title) {
 }
 
 Site.prototype.flash = function(msg, type) {
-  this.trigger('flash', msg, type)
+  this.trigger('coect:flash', msg, type)
 }
 
 Site.prototype.error = function(message) {
-  console.error(message)
-  this.trigger('error', message)
+  if (window.console) console.log('Site.error', message)
+  this.trigger('coect:error', message)
 }
 
 module.exports = new Site()
